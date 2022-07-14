@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+       gradle '7.4.1' 
+    }
     triggers {
         pollSCM '* * * * *'
     }
